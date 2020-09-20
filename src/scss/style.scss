@@ -1,23 +1,8 @@
-@import url(./fonts.scss);
+//Fonts file import
+@import "fonts.scss";
 
+//Common page rules import
+@import "overall.scss";
 
-
-
-
-$bgColor: #24292e;
-$text: #fff;
-
-
-body {
-    padding: 1rem;
-    margin: 0;
-    font-family: 'TTLakes-Regular';
-    background-color: $bgColor;
-    color: $text;
-
-    h1 {
-        font-weight: 900;
-        text-shadow: 1px 1px 3px white;
-    }
-  }
-
+//Header rules import
+@import "blocks/header";
