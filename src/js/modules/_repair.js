@@ -1,3 +1,9 @@
+// core version + navigation, pagination modules:
+import Swiper, { Navigation, Pagination } from 'swiper';
+
+// configure Swiper to use modules
+Swiper.use([Navigation, Pagination]);
+
 const head = document.querySelector('head'),
     cardsBlock = document.querySelector('.repair-cards'),
     showBtn = document.querySelector('#repairShowBtn'),
@@ -12,25 +18,25 @@ const elemWidth = 260,
 //used for showing state
 let flag = true;
 
-// if (document.documentElement.clientWidth < 563) {
-//     //create link to slider style-shield
-//     let styleLink = document.createElement('link');
-//     styleLink.setAttribute('rel', 'stylesheet');
-//     styleLink.setAttribute('href', 'https://unpkg.com/swiper/swiper-bundle.css');
+if (document.documentElement.clientWidth < 563) {
+    //create link to slider style-shield
+    let styleLink = document.createElement('link');
+    styleLink.setAttribute('rel', 'stylesheet');
+    styleLink.setAttribute('href', 'https://unpkg.com/swiper/swiper-bundle.css');
 
-//     head.appendChild(styleLink);
+    head.appendChild(styleLink);
 
-//     //swiper init
-//     const swiper = new Swiper('.swiper-container', {
-//         loop: false,
-//         slidesPerView: 1,
+    //swiper init
+    const swiper = new Swiper('.swiper-container', {
+        loop: false,
+        slidesPerView: 1,
     
-//         pagination: {
-//             el: '.swiper-pagination',
-//             type: 'bullets'
-//         }
-//     });
-// }
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets'
+        }
+    });
+}
 
 showBtn.addEventListener('click', () => {
     showBtn.classList.toggle('services__readmore-button--active');
