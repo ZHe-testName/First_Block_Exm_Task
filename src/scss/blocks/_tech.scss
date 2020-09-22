@@ -1,0 +1,20 @@
+.tech-block{
+    max-width: 240px;
+    margin: 0 auto;
+}
+
+.tech-item{
+    display: block;
+    padding: 16px;
+    margin: 16px 0px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'TTLakes-Bold';
+    color: black;
+    background-color: #fff;
+    width: 206px !important;
+    height: 128px !important;
+    border: 1px solid $borderColor;
+    border-radius: 6px;
+    background: url(../img/repair-imgs/go.svg) 90% 70% no-repeat ;
+}
