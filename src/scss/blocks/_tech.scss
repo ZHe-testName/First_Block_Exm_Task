@@ -1,20 +1,24 @@
 .tech-block{
-    max-width: 240px;
+    width: 80vw;
     margin: 0 auto;
 }
 
 .tech-item{
-    display: block;
-    padding: 16px;
-    margin: 16px 0px;
+    margin: 16px 0px 55px 0px;;
     text-decoration: none;
     font-size: 15px;
-    font-family: 'TTLakes-Bold';
+    font-family: 'TTLakes-Medium';
     color: black;
-    background-color: #fff;
-    width: 206px !important;
-    height: 128px !important;
-    border: 1px solid $borderColor;
+    width: 100% !important;
+    height: 160px !important;
+    box-shadow: inset 0 0 0 1px $borderColor;
     border-radius: 6px;
-    background: url(../img/repair-imgs/go.svg) 90% 70% no-repeat ;
+    background: url(../img/repair-imgs/go.svg) 90% 85% no-repeat;
+    background-color: #fff;
+
+    &__text{
+        display: block;
+        margin-left: 16px;
+        margin-top: 16px;
+    }
 }

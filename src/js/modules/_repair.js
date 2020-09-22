@@ -18,7 +18,8 @@ const elemWidth = 260,
 //used for showing state
 let flag = true;
 
-if (document.documentElement.clientWidth < 563) {
+if (document.documentElement.clientWidth < 547) {
+    console.log(document.documentElement.clientWidth);
     //create link to slider style-shield
     let styleLink = document.createElement('link');
     styleLink.setAttribute('rel', 'stylesheet');
@@ -27,7 +28,17 @@ if (document.documentElement.clientWidth < 563) {
     head.appendChild(styleLink);
 
     //swiper init
-    const swiper = new Swiper('.swiper-container', {
+    const swiperRepair = new Swiper('.repair-main', {
+        loop: false,
+        slidesPerView: 1,
+    
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets'
+        }
+    });
+
+    const swiperTech = new Swiper('.tech-main', {
         loop: false,
         slidesPerView: 1,
     
