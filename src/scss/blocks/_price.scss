@@ -26,14 +26,16 @@
             &__link{
                 width: 120px;
                 height: 32px;
+                background: url(/JS_Mentor_Edicaton/First_Block_Exm_Task/src/img/price-imgs/dropdown.png) 90% no-repeat;
                 background-color: $pincBtnCol;
                 border-radius: 16px;
+                font-size: 14px;
+                padding-left: 10px;
                 text-decoration: none;
+                text-transform: uppercase;
                 color: $whiteBg;
                 display: flex;
-                justify-content: center;
                 align-items: center;
-                word-spacing: 4px;
                 font-family: 'TTLakes-Medium';
             }
         }
