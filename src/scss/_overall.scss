@@ -18,6 +18,10 @@ html{
 body{
     font-family: 'TTLakes-Regular';
     letter-spacing: 1px;
+    max-width: 1440px; 
+}
+
+.main-container{
     background-color: $bgColor;
-    /* max-width: 1120px; */
+    border-bottom: 1px solid transparent;
 }

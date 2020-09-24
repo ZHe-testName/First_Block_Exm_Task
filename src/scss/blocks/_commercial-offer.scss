@@ -5,4 +5,14 @@
     &__link-wrap{
         margin: 16px;
     }
+
+    &__link{
+        font-family: 'TTLakes-Medium';
+        margin-right: 15px;
+    }
+
+    &__img{
+        position: relative;
+        top: 2px;
+    }
 }

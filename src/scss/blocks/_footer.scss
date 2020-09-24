@@ -1,0 +1,15 @@
+.footer{
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+    &-block{
+        margin: 10px 16px;
+        text-align: center;
+    
+        &__link{
+            text-decoration: none;
+            color: $greyText;
+            text-align: center;
+        }
+    }
+}
