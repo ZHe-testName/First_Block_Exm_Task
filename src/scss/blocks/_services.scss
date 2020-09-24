@@ -9,19 +9,14 @@
         margin-top: 20px;
     }
 
-    &__par-text{
-        height: 17vh;
+    &__text-wrap{
+        height: 120px;
         overflow-y: hidden;
         transition: height;
-        transition-duration: 1.2s;;
-
-        &--opened{
-            transition: height;
-            transition-duration: 1.2s;;
-            height: auto;
-        }
+        transition-duration: 0.6s;
+        transition-timing-function: ease-in;
     }
-    
+
     @media(min-width: 660px){
         &__par-block{
             flex-basis: 50%;
