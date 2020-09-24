@@ -1,0 +1,33 @@
+@keyframes trembing_arrow {
+    0%{
+        transform: translateX(0px);
+    }
+
+    25%{
+        transform: translateX(10px);
+    }
+
+    50%{
+        transform: translateX(0px);
+    }
+
+    75%{
+        transform: translateX(18px);
+    }
+
+    // 45%{
+    //     transform: translateX(-15px);
+    // }
+
+    // 55%{
+    //     transform: translateX(10px);
+    // }
+
+    // 65%{
+    //     transform: translateX(-10px);
+    // }
+
+    100%{
+        transform: translateX(0px);
+    }
+}

@@ -6,13 +6,26 @@
         margin: 16px;
     }
 
+    &__link-wrap{
+        border-radius: 7px;
+    }
+
     &__link{
         font-family: 'TTLakes-Medium';
         margin-right: 15px;
+
+        &:hover{
+            cursor: pointer;
+            text-shadow: 0 2px 2px #c5c5c5;
+        }
     }
 
     &__img{
         position: relative;
         top: 2px;
+        right: 10px;
+        animation: trembing_arrow;
+        animation-duration: 1.7s;
+        animation-iteration-count: infinite;
     }
 }
