@@ -10,4 +10,7 @@ import '../js/modules/_repair';
 //Services block js module
 import '../js/modules/_services';
 
+//Menu-navigation js module
+import '../js/modules/_menu-navigation';
+
 console.log('Working');
