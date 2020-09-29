@@ -8,8 +8,8 @@ const showBtn = document.querySelector('#techShowBtn'),
     techCards = document.querySelector('.tech-cards'),
     allLinks = techCards.querySelectorAll('a'),
 
-    elemWidth = 260,
-    elemHeight = 240;
+    elemWidth = 255,
+    elemHeight = 230;
 
 let flag = true;
 
@@ -38,9 +38,9 @@ showBtn.addEventListener('click', () => {
         if(screenWidth > 1120){
             elemsInRow = 4;
         }else{
-            elemsInRow = Math.floor(((screenWidth - 44) / elemWidth));
+            elemsInRow = Math.floor(((screenWidth) / elemWidth));
         }
-    
+        console.log(elemsInRow);
         //insert inline style into cards-block element
         techCards.setAttribute('style', ` height: ${(elemsAmount / elemsInRow) * elemHeight}px;
                                         transition: height;

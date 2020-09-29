@@ -12,6 +12,7 @@
     .tech-cards{
         display: flex;
         flex-wrap: wrap;
+        margin: 10px;
         height: 180px;
         overflow-y: hidden;
         transition: height;
@@ -51,9 +52,5 @@
         width: 225px;
         display: block;
         margin: 10px;
-    }
-
-    .tech-item:first-child{
-        margin-left: 20px;
     }
 }
