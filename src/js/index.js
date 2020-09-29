@@ -14,6 +14,9 @@ import '../js/modules/_services';
 import '../js/modules/_menu-navigation';
 
 //Tech block js module
-import '../js/modules/_tech'
+import '../js/modules/_tech';
+
+//Footer style changer js module
+import '../js/modules/_footer';
 
 console.log('Working');

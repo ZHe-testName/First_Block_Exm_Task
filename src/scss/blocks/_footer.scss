@@ -13,3 +13,24 @@
         }
     }
 }
+
+@media(min-width: 768px){
+    .footer{
+        display: flex;
+        justify-content: space-between;
+
+        &-block{
+            flex-basis: 33%;
+        }
+    }
+}
+
+.left-txt-orient{
+    display: block;
+    text-align: left;
+}
+
+.right-txt-orient{
+    display: block;
+    text-align: right;
+}
