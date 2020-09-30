@@ -18,7 +18,7 @@ const elemWidth = 260,
 //used for showing state
 let flag = true;
 
-if (document.documentElement.clientWidth < 547) {
+if (document.documentElement.clientWidth < 564) {
     //create link to slider style-shield
     let styleLink = document.createElement('link');
     styleLink.setAttribute('rel', 'stylesheet');
