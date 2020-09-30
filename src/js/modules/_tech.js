@@ -1,9 +1,5 @@
 // core version + navigation, pagination modules:
 import Swiper, { Navigation, Pagination } from 'swiper';
-
-// configure Swiper to use modules
-Swiper.use([Navigation, Pagination]);
-
 const showBtn = document.querySelector('#techShowBtn'),
     techCards = document.querySelector('.tech-cards'),
     allLinks = techCards.querySelectorAll('a'),
@@ -12,18 +8,6 @@ const showBtn = document.querySelector('#techShowBtn'),
     elemHeight = 230;
 
 let flag = true;
-
-if (document.documentElement.clientWidth < 564) {
-    const swiperTech = new Swiper('.tech-main', {
-        loop: false,
-        slidesPerView: 1,
-
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets'
-        }
-    });
-}
 
 showBtn.addEventListener('click', () => {
     showBtn.classList.toggle('services__readmore-button--active');

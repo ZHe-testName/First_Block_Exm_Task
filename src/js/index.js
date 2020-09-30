@@ -4,6 +4,9 @@
 //Include main scss file
 import '../scss/style.scss';
 
+//Include Swiper sliders
+import '../js/modules/_sliders';
+
 //Repair block js module
 import '../js/modules/_repair';
 
