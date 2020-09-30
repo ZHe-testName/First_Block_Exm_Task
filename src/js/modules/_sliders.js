@@ -18,31 +18,55 @@ if (document.documentElement.clientWidth < 564) {
     //swiper init
     const swiperRepair = new Swiper('.repair-main', {
         loop: false,
-        slidesPerView: 1,
+        slidesPerView: 1.2,
+        freeMode: true,
+        spaceBetween: 10,
     
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets'
+        },
+
+        breakpoints: {
+            440: {
+                slidesPerView: 1.4
+            }
         }
     });
 
     const swiperPrice = new Swiper('.price-main', {
         loop: false,
-        slidesPerView: 1,
+        slidesPerView: 1.2,
+        freeMode: true,
+        spaceBetween: 10,
     
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets'
+        },
+
+        breakpoints: {
+            440: {
+                slidesPerView: 1.4
+            }
         }
     });
 
     const swiperTech = new Swiper('.tech-main', {
         loop: false,
-        slidesPerView: 1,
-
+        slidesPerView: 1.2,
+        freeMode: true,
+        spaceBetween: 10,
+    
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets'
+        },
+
+        breakpoints: {
+            440: {
+                slidesPerView: 1.4
+            }
         }
     });
 

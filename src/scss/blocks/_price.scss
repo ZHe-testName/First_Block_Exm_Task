@@ -18,9 +18,17 @@
             }
 
             &__link-item{
-                position: absolute;
-                right: 16px;
-                bottom: 16px;
+                position: relative;
+                right: -10px;
+                bottom: 10px;
+            }
+
+            @media (min-width: 380px){
+                &__link-item{
+                    position: absolute;
+                    right: 16px;
+                    bottom: 16px;
+                }
             }
         }
     }
@@ -95,7 +103,7 @@
                 margin: 0 10px;
             }
 
-            :not(:last-child){
+            &__row:not(:last-child){
                 border-bottom: 1px solid $borderColor;
             }
 
