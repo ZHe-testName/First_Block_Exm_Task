@@ -5,19 +5,25 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
 
 //Function for incertion slider clasess into the elements
-const addSliderClasses = className => {
+const addSliderClasses = (className, withoutLastSlide = false) => {
     const wrap = document.querySelector(className);
+    
+    let countVal = 0;
 
     wrap.parentElement.classList.add('swiper-container');
     wrap.classList.add('swiper-wrapper');
 
-    for(let i = 0; i < wrap.children.length; i++){
+    if (withoutLastSlide){
+        countVal++;
+    }
+
+    for(let i = 0; i < wrap.children.length - countVal; i++){
         wrap.children[i].classList.add('swiper-slide');
     }   
 }
 
-if (document.documentElement.clientWidth < 564) {
-    addSliderClasses('.repair-cards');
+if (document.documentElement.clientWidth < 564){
+    addSliderClasses('.repair-cards', true);
 
     //swiper init
     const swiperRepair = new Swiper('.repair-main', {
@@ -38,7 +44,7 @@ if (document.documentElement.clientWidth < 564) {
         }
     });
 
-    addSliderClasses('.tech-cards');
+    addSliderClasses('.tech-cards', true);
 
     const swiperTech = new Swiper('.tech-main', {
         loop: false,
