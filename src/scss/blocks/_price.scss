@@ -18,23 +18,16 @@
             }
 
             &__link-item{
-                position: relative;
-                right: -10px;
-                bottom: 10px;
-            }
-
-            @media (min-width: 380px){
-                &__link-item{
-                    position: absolute;
-                    right: 16px;
-                    bottom: 16px;
-                }
+                position: absolute;
+                right: 16px;
+                bottom: 16px;
+                margin-bottom: 0px;
             }
         }
     }
 }
 
-@media (min-width: 564px){
+@media (min-width: 768px){
     .price-block{
         display: none;
     }
@@ -68,7 +61,7 @@
     display: none;
 }
 
-@media (min-width: 564px){
+@media (min-width: 768px){
     .price-wide{
         display: block;
         margin: 20px;

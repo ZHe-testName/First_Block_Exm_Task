@@ -3,27 +3,27 @@
     border: 1px solid transparent;
     max-width: 1440px;
     margin: 0 auto;
-}
 
-.repair-header{
-    border: 1px solid transparent;
-    background: linear-gradient( -270deg, #F8F8F8 0%, #FFFFFF 98.61%);
-
-    &__text{
-        text-transform: uppercase;
-        font-size: 16px;
-        line-height: 24px;
-        color:  $greyText;
-        font-family: 'TTLakes-Regular';
-        font-weight: 500;
-        letter-spacing: 0.2px;
-        margin: 15px 0px 15px 31px;
+    &-header{
+        border: 1px solid transparent;
+        background: linear-gradient( -270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    
+        &__text{
+            text-transform: uppercase;
+            font-size: 16px;
+            line-height: 24px;
+            color:  $greyText;
+            font-family: 'TTLakes-Regular';
+            font-weight: 500;
+            letter-spacing: 0.2px;
+            margin: 15px 0px 15px 31px;
+        }
     }
-}
 
-.repair-block{
-    width: 80vw;
-    margin: 0 auto;
+    &-block{
+        width: 80vw;
+        margin: 0 auto;
+    }
 }
 
 @media(min-width: 564px){
@@ -55,28 +55,13 @@
         height: 150px;
         margin-bottom: 15px;
         margin-left: 20px;
+        margin-right: 0px;
         transition: height;
         transition-duration: 0.7s;
         transition-timing-function: ease-in;
     }
 
 }
-
-// @media(min-width: 564px){
-
-//     .repair-cards__button:hover{
-//         transform: scale(1.1);
-//         box-shadow: 0 2px 5px 0 rgb(184, 183, 183);
-//         transition: transform;
-//         transition-duration: 0.4s;
-//     }
-
-//     .repair-cards__button:hover>img{
-//         margin-left: 12%;
-//         transition: margin-left;
-//         transition-duration: 0.5s;
-//     }
-// }
 
 .repair-cards__button{
     display: flex;

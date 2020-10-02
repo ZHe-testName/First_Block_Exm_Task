@@ -1,5 +1,3 @@
-// core version + navigation, pagination modules:
-import Swiper, { Navigation, Pagination } from 'swiper';
 const showBtn = document.querySelector('#techShowBtn'),
     techCards = document.querySelector('.tech-cards'),
     allLinks = techCards.querySelectorAll('a'),
@@ -24,7 +22,7 @@ showBtn.addEventListener('click', () => {
         }else{
             elemsInRow = Math.floor(((screenWidth) / elemWidth));
         }
-        console.log(elemsInRow);
+        
         //insert inline style into cards-block element
         techCards.setAttribute('style', ` height: ${(elemsAmount / elemsInRow) * elemHeight}px;
                                         transition: height;
