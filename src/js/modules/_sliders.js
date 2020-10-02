@@ -96,7 +96,7 @@ if (document.documentElement.clientWidth <= 1120){
         slidesPerView: 1.1,
         freeMode: true,
         spaceBetween: 10,
-    
+
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets'
@@ -115,11 +115,11 @@ if (document.documentElement.clientWidth <= 1120){
             720: {
                 slidesPerView: 2.6
             },
-            800: {
-                slidesPerView: 3.3
-            },
+            // 800: {
+            //     slidesPerView: 3.3
+            // },
             1000: {
-                slidesPerView: 4
+                slidesPerView: 3.5
             }
         }
     });

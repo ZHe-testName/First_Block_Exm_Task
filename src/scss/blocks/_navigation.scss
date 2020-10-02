@@ -1,3 +1,15 @@
+.navigation{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+@media(min-width: 1120px){
+    .navigation{
+        max-width: 1120px;
+        margin: 0 15px;
+    }
+}
+
 .menu-navigation{
     overflow-x: hidden;
     background-color: #F8F8F8;
