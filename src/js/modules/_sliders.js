@@ -113,10 +113,10 @@ if (document.documentElement.clientWidth <= 1120){
                 slidesPerView: 2.1
             },
             720: {
-                slidesPerView: 2.8
+                slidesPerView: 2.6
             },
             800: {
-                slidesPerView: 3.5
+                slidesPerView: 3.3
             },
             1000: {
                 slidesPerView: 4
