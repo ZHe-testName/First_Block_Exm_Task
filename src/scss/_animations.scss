@@ -40,3 +40,12 @@
         transform: translateX(0%);
     }
 }
+
+@keyframes after-click-cross {
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: rotate(135deg);
+    }
+}

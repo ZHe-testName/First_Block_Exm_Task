@@ -108,9 +108,41 @@
 }
 
 .basic-button--close-bg{
+    position: relative;
     background-color: $pincBtnCol;
     border-radius: 50%;
     margin: 0 10px;
+
+    &::before{
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 19px;
+        width: 20px;
+        height: 3px;
+        background-color: $whiteBg;
+        // transform: translateX(-10px);
+        // transform: rotate(45deg);
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 19px;
+        width: 20px;
+        height: 3px;
+        background-color: $whiteBg;
+        // transform: translateX(9px);
+        // transform: rotate(135deg);
+    }
+}
+
+.animate-after{
+    animation: after-click-cross;
+    animation-delay: 0.7s;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
 }
 
 @media (min-width: 1440px){
