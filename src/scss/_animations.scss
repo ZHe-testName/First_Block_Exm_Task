@@ -19,3 +19,24 @@
         transform: translateX(0px);
     }
 }
+
+
+
+@keyframes faststik {
+    0%{
+        transform: translateX(100%);
+    }
+    30%{
+        transform: translateX(0%);
+        width: 200%;
+    }
+    70%{
+        width: 2%;
+        background-color: rgba(194, 194, 194, 0.596);
+    }
+    100%{
+        background-color: rgb(8, 8, 8);
+        width: 2%;
+        transform: translateX(0%);
+    }
+}

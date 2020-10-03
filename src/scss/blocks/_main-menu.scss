@@ -70,6 +70,20 @@
     
 }
 
+@media (min-width: 1440px){
+    .main-menu{
+        display: block;
+        overflow-x: hidden;
+        height: auto;
+    }
+}
+
+@media (min-width: 1445px){
+    .main-menu{
+        border-left: 1px solid $borderColor;
+    }
+}
+
 .basic-button--search-bg{
     background: url("../img/menu-imgs/search.svg") no-repeat center;
     margin: 0 10px;
@@ -112,26 +126,6 @@
     transform: translateX(100%);
 }
 
-@keyframes faststik {
-    0%{
-        transform: translateX(100%);
-    }
-    30%{
-        transform: translateX(0%);
-        width: 200%;
-    }
-    70%{
-        width: 2%;
-        background-color: rgba(194, 194, 194, 0.596);
-    }
-    100%{
-        background-color: rgb(8, 8, 8);
-        width: 2%;
-        transform: translateX(0%);
-    }
-}
-
-
 .email:hover::after,
 .phone:hover::after{
     animation: faststik;
@@ -166,3 +160,4 @@
     color: #7E7E82;
     font-weight: normal;
 }
+

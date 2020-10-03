@@ -1,5 +1,10 @@
 .commercial-offer{
     max-width: 420px;
+    margin-left: 5px;
+
+    &__desc{
+        font-size: 14px;
+    }
 
     &__desc,
     &__link-wrap{

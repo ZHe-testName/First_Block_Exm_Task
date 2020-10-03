@@ -18,13 +18,25 @@ html{
 body{
     font-family: 'TTLakes-Regular';
     letter-spacing: 1px;
-    max-width: 1440px; 
+}
+
+.full-screen-wrap{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1440px){
+    .full-screen-wrap{
+        display: flex;
+        justify-content: stretch;
+    }
 }
 
 .main-container{
     background-color: $bgColor;
     border-bottom: 1px solid transparent;
     max-width: 1120px;
+    margin: 0 auto;
 }
 
 .spacer{
