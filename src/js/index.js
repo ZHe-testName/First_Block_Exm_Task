@@ -7,6 +7,12 @@ import '../scss/style.scss';
 //Include Swiper sliders
 import '../js/modules/_sliders';
 
+//Header js file
+import '../js/modules/_header';
+
+//Main menu js file incerion
+import '../js/modules/_main-menu';
+
 //Repair block js module
 import '../js/modules/_repair';
 
