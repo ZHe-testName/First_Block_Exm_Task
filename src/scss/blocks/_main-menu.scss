@@ -13,6 +13,7 @@
         width: auto;
         visibility: visible;
         position: static;
+        height: auto;
     }
 }
 
@@ -129,8 +130,7 @@
     border-radius: 50%;
     margin: 0 10px;
 
-    &::before{
-        content: '';
+    &__first-stick{
         position: absolute;
         left: 10px;
         top: 19px;
@@ -141,8 +141,7 @@
         // transform: rotate(45deg);
     }
 
-    &::after{
-        content: '';
+    &__second-stick{
         position: absolute;
         left: 10px;
         top: 19px;
@@ -154,10 +153,17 @@
     }
 }
 
-.animate-after{
-    animation: after-click-cross;
+.animate-first{
+    animation: first-stick;
     animation-delay: 0.7s;
-    animation-duration: 0.8s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animate-second{
+    animation: second-stick;
+    animation-delay: 0.7s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 

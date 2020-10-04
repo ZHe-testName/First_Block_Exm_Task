@@ -1,6 +1,11 @@
 const mainMenu = document.querySelector('.main-menu'),
-    buttons = mainMenu.querySelectorAll('button'),
-    links = mainMenu.querySelectorAll('a');
+    closeButton = mainMenu.querySelector('.basic-button--close-bg'),
+    links = mainMenu.querySelectorAll('a'),
+    
+    animateClasess = [
+        'animate-first',
+        'animate-second'
+    ];
 
 mainMenu.addEventListener('click', (event) => {
     let target = event.target;
@@ -18,22 +23,29 @@ mainMenu.addEventListener('click', (event) => {
             }
         }
     }
-
-    if (target.classList.contains('basic-button')){
+           
+    // if (target.classList.contains('basic-button--close-bg') || target.classList.contains('cross')){
         
-        for (item of buttons){
-            if (target.classList.contains('basic-button--close-bg')){
-                
-                mainMenu.classList.remove('main-menu--visible-mod');
+    //     mainMenu.classList.remove('main-menu--visible-mod');
 
-                target.classList.remove('animate-after');
+    //     target.firstElementChild.classList.remove('animate-first');
+    //     target.lastElementChild.classList.remove('animate-second');
 
-                setTimeout(() => {
-                    mainMenu.parentElement.style.visibility = 'hidden';
-                }, 600);
-                
-            }
-        }
-    }
+    //     setTimeout(() => {
+    //         mainMenu.parentElement.style.visibility = 'hidden';
+    //     }, 600);      
+    // }
+});
+
+closeButton.addEventListener('click', () => {
+    
+    mainMenu.classList.remove('main-menu--visible-mod');
+
+    closeButton.firstElementChild.classList.remove('animate-first');
+    closeButton.lastElementChild.classList.remove('animate-second');
+
+    setTimeout(() => {
+        mainMenu.parentElement.style.visibility = 'hidden';
+    }, 600);      
 })
 

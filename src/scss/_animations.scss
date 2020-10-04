@@ -41,9 +41,24 @@
     }
 }
 
-@keyframes after-click-cross {
+@keyframes first-stick {
     50%{
-        transform: translateX(0px);
+        transform: rotate(360deg);
+    }
+    75%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes second-stick {
+    50%{
+        transform: rotate(-360deg);
+    }
+    75%{
+        transform: translateX(-10px);
     }
     100%{
         transform: rotate(135deg);
