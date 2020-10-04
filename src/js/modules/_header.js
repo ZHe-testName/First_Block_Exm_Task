@@ -1,12 +1,6 @@
 const header = document.querySelector('.header'),
     mainMenu = document.querySelector('.main-menu'),
-    closeBtn = mainMenu.querySelector('.basic-button--close-bg'),
-    headersButtons = header.querySelectorAll('button'),
-    
-    animateClasess = [
-        'animate-first',
-        'animate-second'
-    ];
+    closeBtn = mainMenu.querySelector('.basic-button--close-bg');
 
 header.addEventListener('click', (event) => {
     let target = event.target;
