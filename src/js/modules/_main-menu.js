@@ -23,10 +23,15 @@ mainMenu.addEventListener('click', (event) => {
         
         for (item of buttons){
             if (target.classList.contains('basic-button--close-bg')){
-
+                
                 mainMenu.classList.remove('main-menu--visible-mod');
 
                 target.classList.remove('animate-after');
+
+                setTimeout(() => {
+                    mainMenu.parentElement.style.visibility = 'hidden';
+                }, 600);
+                
             }
         }
     }

@@ -1,8 +1,24 @@
+.menu-wrap{
+    visibility: hidden;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.74);
+    z-index: 9999;
+}
+
+@media(min-width: 1440px){
+    .menu-wrap{
+        width: auto;
+        visibility: visible;
+        position: static;
+    }
+}
+
 .main-menu{
-    // display: none;
     float: left;
     position: absolute;
-    z-index: 9999;
     top: 0px;
     left: 0px;
     flex-direction: column;
@@ -92,7 +108,7 @@
         transform: translateX(0px);
         box-shadow: none;
         overflow-x: hidden;
-        height: auto;
+        height: 100%;
     }
 }
 

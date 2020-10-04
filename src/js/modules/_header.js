@@ -5,8 +5,9 @@ const header = document.querySelector('.header'),
 
 header.addEventListener('click', (event) => {
     let target = event.target;
-
+    
     if (target.classList.contains('basic-button--burger-bg')){
+        mainMenu.parentElement.style.visibility = 'visible';
         mainMenu.classList.add('main-menu--visible-mod');
 
         closeBtn.classList.add('animate-after')
