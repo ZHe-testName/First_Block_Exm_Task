@@ -28,4 +28,7 @@ import '../js/modules/_tech';
 //Footer style changer js module
 import '../js/modules/_footer';
 
+//Modal feedback js incertion
+import '../js/modules/_modal-feedback';
+
 console.log('Working');

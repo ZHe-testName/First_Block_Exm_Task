@@ -1,5 +1,6 @@
 const mainMenu = document.querySelector('.main-menu'),
     closeButton = mainMenu.querySelector('.basic-button--close-bg'),
+    feedbackBlock = document.getElementById('feedback'),
     links = mainMenu.querySelectorAll('a');
 
 mainMenu.addEventListener('click', (event) => {
@@ -18,6 +19,12 @@ mainMenu.addEventListener('click', (event) => {
             }
     
         )
+    }
+
+    if (target.classList.contains('basic-button--chat-bg')){
+        feedbackBlock.style.visibility = 'visible';
+
+        feedbackBlock.firstElementChild.classList.add('modal--visible-mod');
     }
 });
 

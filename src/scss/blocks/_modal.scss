@@ -1,0 +1,37 @@
+.modal-wrap{
+    position: fixed;
+    visibility: hidden;
+    right: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.74);
+    z-index: 9998;
+}
+
+.modal{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    max-width: 440px;
+    background-color: #fff;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    transform: translateX(380px);
+    transition: transform;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-out;
+
+    &--visible-mod{
+        transform: translateX(0px);
+        transition: transform;
+        transition-duration: 0.7s;
+        transition-timing-function: ease-in;
+    }
+}
+
+.modal__btn-wrap{
+    height: 50px;
+}
