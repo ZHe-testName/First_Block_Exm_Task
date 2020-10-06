@@ -25,6 +25,11 @@ mainMenu.addEventListener('click', (event) => {
         feedbackBlock.style.visibility = 'visible';
 
         feedbackBlock.firstElementChild.classList.add('modal--visible-mod');
+
+        //Immit the event on closing button
+        //for shut menu window
+        let event = new Event('click');
+        closeButton.dispatchEvent(event);
     }
 });
 

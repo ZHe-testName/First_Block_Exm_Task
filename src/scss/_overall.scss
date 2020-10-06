@@ -3,6 +3,7 @@ $whiteBg: #FFF;
 $borderColor: #EAEAEA;
 $pincBtnCol: #FF3E79;
 $greyText: #7E7E82;
+$borderGreen: #41F6D7;
 
 
 html{
@@ -38,6 +39,26 @@ body{
     border-bottom: 1px solid transparent;
     max-width: 1120px;
     margin: 0 auto;
+}
+
+.basic-long-btn{
+    width: 110px;
+    height: 32px;
+    background: url(/JS_Mentor_Edicaton/First_Block_Exm_Task/src/img/price-imgs/dropdown.png) 90% no-repeat;
+    background-color: $pincBtnCol;
+    border-radius: 16px;
+    font-size: 13px;
+    padding-left: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $whiteBg;
+    display: flex;
+    align-items: center;
+    font-family: 'TTLakes-Medium';
+
+    &:hover{
+        box-shadow: 0 0 5px 2px #e698bf;
+    }
 }
 
 .spacer{
