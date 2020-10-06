@@ -48,6 +48,12 @@
         height: 70px;
     }
 
+    @media(min-width: 500px){
+        &-closing-block{
+            height: auto;
+        }
+    }
+
     &__btn-wrap{
         height: 50px;
         margin-top: 10px;
@@ -86,6 +92,10 @@
     &-description__link{
         color: $pincBtnCol;
         text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
 
     &-btn{
@@ -103,3 +113,9 @@
     }
 }
 
+@media (min-width: 500px){
+    .wide-mode{
+        position: absolute;
+        left: -30px;
+    }
+}

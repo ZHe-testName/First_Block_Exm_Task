@@ -34,8 +34,10 @@ mainMenu.addEventListener('click', (event) => {
 
         //Immit the event on closing button
         //for shut menu window
-        let event = new Event('click');
-        closeButton.dispatchEvent(event);
+        if (document.documentElement.clientWidth < 1440){
+            let event = new Event('click');
+            closeButton.dispatchEvent(event);
+        }
     }
 
     if (target.classList.contains('basic-button--call-bg')){
@@ -46,8 +48,10 @@ mainMenu.addEventListener('click', (event) => {
         callbackCloseButton.firstElementChild.classList.add('animate-first');
         callbackCloseButton.lastElementChild.classList.add('animate-second');
 
-        let event = new Event('click');
-        closeButton.dispatchEvent(event);
+        if (document.documentElement.clientWidth < 1440){
+            let event = new Event('click');
+            closeButton.dispatchEvent(event);
+        }
     }
 });
 
