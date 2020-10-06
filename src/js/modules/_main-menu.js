@@ -1,7 +1,9 @@
 const mainMenu = document.querySelector('.main-menu'),
     closeButton = mainMenu.querySelector('.basic-button--close-bg'),
     feedbackBlock = document.getElementById('feedback'),
+    callbackBlock = document.getElementById('callback'),
     feedbackCloseButton = document.getElementById('feedback-close'),
+    callbackCloseButton = document.getElementById('callback-close'),
     links = mainMenu.querySelectorAll('a');
 
 mainMenu.addEventListener('click', (event) => {
@@ -32,6 +34,18 @@ mainMenu.addEventListener('click', (event) => {
 
         //Immit the event on closing button
         //for shut menu window
+        let event = new Event('click');
+        closeButton.dispatchEvent(event);
+    }
+
+    if (target.classList.contains('basic-button--call-bg')){
+        callbackBlock.parentElement.style.visibility = 'visible';
+
+        callbackBlock.classList.add('modal--visible-mod');
+
+        callbackCloseButton.firstElementChild.classList.add('animate-first');
+        callbackCloseButton.lastElementChild.classList.add('animate-second');
+
         let event = new Event('click');
         closeButton.dispatchEvent(event);
     }

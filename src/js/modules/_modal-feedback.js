@@ -14,4 +14,4 @@ feedbackModal.addEventListener('click', (event) => {
             feedbackModal.parentElement.style.visibility = 'hidden';
         }, 400);   
     }
-})
+});

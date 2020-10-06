@@ -31,4 +31,7 @@ import '../js/modules/_footer';
 //Modal feedback js incertion
 import '../js/modules/_modal-feedback';
 
+//Modal callback js incertion
+import '../js/modules/_modal-callback';
+
 console.log('Working');

@@ -8,9 +8,9 @@
     z-index: 9998;
 }
 
-@media (min-width: 768px){
-    .main-menu{
-        overflow: auto;
+@media(min-width: 768px){
+    .menu-wrap{
+        overflow-y: hidden;
     }
 }
 
@@ -115,6 +115,12 @@
         box-shadow: none;
         overflow-x: hidden;
         height: 100%;
+    }
+}
+
+@media (min-width: 768px){
+    .main-menu{
+        overflow-y: hidden;
     }
 }
 
