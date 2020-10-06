@@ -1,6 +1,7 @@
 .modal-wrap{
     position: fixed;
     visibility: hidden;
+    overflow-y: scroll;
     right: 0px;
     top: 0px;
     width: 100vw;
@@ -14,22 +15,28 @@
     top: 0px;
     right: 0px;
     max-width: 440px;
-    height: 100vh;
     background-color: #fff;
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    transform: translateX(380px);
     transition: transform;
+    transform: translateX(380px);
     transition-duration: 0.7s;
     transition-timing-function: ease-out;
 
     &--visible-mod{
-        transform: translateX(0px);
         transition: transform;
+        transform: translateX(0px);
         transition-duration: 0.7s;
         transition-timing-function: ease-in;
+    }
+
+    &-content{
+        max-width: 375px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 30px;
     }
 
     &-closing-block{
@@ -50,7 +57,7 @@
         align-items: center;
         height: 40px;
         max-width: 345px;
-        box-shadow: inset 3px 0 0 $borderGreen;
+        border-left: 3px solid $borderGreen;
         margin-bottom: 15px;
 
         &__text{
@@ -67,27 +74,16 @@
         margin-bottom: 15px;
         padding: 12px;
         color: #B5B6BC;
+        font-size: 17px;
 
         &--textarea-mod{
             height: 120px;
         }
     }
 
-    &-description{
-        max-width: 375px;
-        margin-left: 5%;
-        margin-right: 5%; 
-
-        &__link{
-            color: $pincBtnCol;
-            text-decoration: none;
-        }
-    }
-
-    &-submit{
-        max-width: 375px;
-        margin-left: 5%;
-        margin-right: 5%;
+    &-description__link{
+        color: $pincBtnCol;
+        text-decoration: none;
     }
 
     &-btn{
@@ -99,8 +95,9 @@
     }
 }
 
-.feedback-form{
-    max-width: 375px;
-    margin-left: 5%;
-    margin-right: 5%;
+@media (min-width: 1024px){
+    .modal{
+        height: 100vh;
+    }
 }
+

@@ -8,6 +8,12 @@
     z-index: 9998;
 }
 
+@media (min-width: 768px){
+    .main-menu{
+        overflow: auto;
+    }
+}
+
 @media(min-width: 1440px){
     .menu-wrap{
         width: auto;
@@ -18,12 +24,12 @@
 }
 
 .main-menu{
-    float: left;
     position: absolute;
     top: 0px;
     left: 0px;
     max-width: 320px;
     background-color: #fff;
+    overflow-y: scroll;
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
     font-weight: normal;
     font-size: 16px;
@@ -34,8 +40,8 @@
     transition-timing-function: ease-out;
 
     &--visible-mod{
-        display: block;
-        left: 0px;
+        // display: block;
+        // left: 0px;
         transform: translateX(0px);
         transition: transform;
         transition-duration: 0.7s;

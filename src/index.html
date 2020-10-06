@@ -848,11 +848,11 @@
         </main>
         <!-- /.main-container -->
 
-        <div class="modal-wrap" id="feedback">
-            <div class="modal">
+        <div class="modal-wrap">
+            <div id="feedback" class="modal">
                 <div class="modal-closing-block">
                     <div class="modal__btn-wrap">
-                        <button class="basic-button basic-button--close-bg">
+                        <button id="feedback-close" class="basic-button basic-button--close-bg">
                             <div class="basic-button--close-bg__first-stick cross"></div>
                             <div class="basic-button--close-bg__second-stick cross"></div>
                         </button>
@@ -867,41 +867,42 @@
                     <!-- /.modal-header__text -->
                 </div>
                 <!-- /.modal-header -->
-                <form action="#" class="feedback-form">
-                    <input type="text" class="modal-form-input" placeholder="Имя">
-                    <input type="tel" class="modal-form-input" placeholder="Телефон">
-                    <input type="email" class="modal-form-input" placeholder="Электронная почта">
-                    <textarea class="modal-form-input modal-form-input--textarea-mod" placeholder="Сообщение">
-                       
-                    </textarea>
-                </form>
-                <!-- /.feedback-form -->
-                <div class="modal-description">
-                    <span class="modal-description__text">
-                        Нажимая "отправить", вы даете согласие на
-                    </span> 
-                    <!-- /.modal-description__text -->
-                    <a href="" class="modal-description__link">
-                        обработку персональных данных
-                    </a> 
-                    <!-- /.modal-description__link -->
-                    <span class="modal-description__text">
-                        и соглашаетесь с нашей
-                    </span> 
-                    <!-- /.modal-description__text -->
-                    <a href="" class="modal-description__link">
-                        политикой конфиденсиалности
-                    </a> 
-                    <!-- /.modal-description__link -->
+                <div class="modal-content">
+                    <form action="#" class="feedback-form">
+                        <input type="text" class="modal-form-input" placeholder="Имя">
+                        <input type="tel" class="modal-form-input" placeholder="Телефон">
+                        <input type="email" class="modal-form-input" placeholder="Электронная почта">
+                        <textarea class="modal-form-input modal-form-input--textarea-mod" placeholder="Сообщение"></textarea>
+                    </form>
+                    <!-- /.feedback-form -->
+                    <div class="modal-description">
+                        <span class="modal-description__text">
+                            Нажимая "отправить", вы даете согласие на
+                        </span> 
+                        <!-- /.modal-description__text -->
+                        <a href="" class="modal-description__link">
+                            обработку персональных данных
+                        </a> 
+                        <!-- /.modal-description__link -->
+                        <span class="modal-description__text">
+                            и соглашаетесь с нашей
+                        </span> 
+                        <!-- /.modal-description__text -->
+                        <a href="" class="modal-description__link">
+                            политикой конфиденсиалности
+                        </a> 
+                        <!-- /.modal-description__link -->
+                    </div>
+                    <!-- /.modal-description -->
+                    <div class="modal-submit">
+                        <button class="basic-long-btn modal-btn">
+                            Отправить
+                        </button> 
+                        <!-- /.basic-long-btn -->
+                    </div>
+                    <!-- /.modal-submit -->
                 </div>
-                <!-- /.modal-description -->
-                <div class="modal-submit">
-                    <button class="basic-long-btn modal-btn">
-                        Отправить
-                    </button> 
-                    <!-- /.basic-long-btn -->
-                </div>
-                <!-- /.modal-submit -->
+                <!-- /.modal-content -->
             </div>
             <!-- /.modal -->
         </div>

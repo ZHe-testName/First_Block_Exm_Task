@@ -1,6 +1,7 @@
 const mainMenu = document.querySelector('.main-menu'),
     closeButton = mainMenu.querySelector('.basic-button--close-bg'),
     feedbackBlock = document.getElementById('feedback'),
+    feedbackCloseButton = document.getElementById('feedback-close'),
     links = mainMenu.querySelectorAll('a');
 
 mainMenu.addEventListener('click', (event) => {
@@ -22,9 +23,12 @@ mainMenu.addEventListener('click', (event) => {
     }
 
     if (target.classList.contains('basic-button--chat-bg')){
-        feedbackBlock.style.visibility = 'visible';
+        feedbackBlock.parentElement.style.visibility = 'visible';
 
-        feedbackBlock.firstElementChild.classList.add('modal--visible-mod');
+        feedbackBlock.classList.add('modal--visible-mod');
+
+        feedbackCloseButton.firstElementChild.classList.add('animate-first');
+        feedbackCloseButton.lastElementChild.classList.add('animate-second');
 
         //Immit the event on closing button
         //for shut menu window
@@ -42,6 +46,6 @@ closeButton.addEventListener('click', () => {
 
     setTimeout(() => {
         mainMenu.parentElement.style.visibility = 'hidden';
-    }, 600);      
+    }, 400);      
 })
 
