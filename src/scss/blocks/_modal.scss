@@ -68,8 +68,14 @@
         border: 1px solid $borderColor;
         margin-bottom: 15px;
         padding: 12px;
-        color: #B5B6BC;
+        color: #555555;
         font-size: 17px;
+
+        &::placeholder{
+            color: #B5B6BC;
+            font-size: 17px;
+            font-family: 'TTLakes-Regular';
+        }
 
         &--textarea-mod{
             height: 120px;
