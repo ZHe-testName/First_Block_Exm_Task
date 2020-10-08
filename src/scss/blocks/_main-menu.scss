@@ -8,7 +8,7 @@
     z-index: 9998;
 }
 
-@media(min-width: 768px){
+@media(min-width: 1124px){
     .menu-wrap{
         overflow-y: hidden;
     }
@@ -148,8 +148,6 @@
         width: 20px;
         height: 3px;
         background-color: $whiteBg;
-        // transform: translateX(-10px);
-        // transform: rotate(45deg);
     }
 
     &__second-stick{
@@ -159,22 +157,20 @@
         width: 20px;
         height: 3px;
         background-color: $whiteBg;
-        // transform: translateX(9px);
-        // transform: rotate(135deg);
     }
 }
 
 .animate-first{
     animation: first-stick;
     animation-delay: 0.7s;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;
 }
 
 .animate-second{
     animation: second-stick;
     animation-delay: 0.7s;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;
 }
 

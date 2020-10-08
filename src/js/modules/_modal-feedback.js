@@ -1,5 +1,5 @@
 const feedbackModal = document.getElementById('feedback'),
-    closeButton = document.getElementById('feedback-close');
+    closeButtons = feedbackModal.parentElement.querySelectorAll('.basic-button--close-bg');
 
 feedbackModal.parentElement.addEventListener('click', (event) => {
     const target = event.target;
@@ -10,8 +10,10 @@ feedbackModal.parentElement.addEventListener('click', (event) => {
         
         feedbackModal.classList.remove('modal--visible-mod');
 
-        closeButton.firstElementChild.classList.remove('animate-first');
-        closeButton.lastElementChild.classList.remove('animate-second');
+        closeButtons.forEach(btn => {
+            btn.firstElementChild.classList.remove('animate-first');
+            btn.lastElementChild.classList.remove('animate-second');
+        })
 
         setTimeout(() => {
             feedbackModal.parentElement.style.visibility = 'hidden';

@@ -6,7 +6,7 @@ const mainMenu = document.querySelector('.main-menu'),
     callbackCloseButton = document.getElementById('callback-close'),
     links = mainMenu.querySelectorAll('a');
 
-mainMenu.addEventListener('click', (event) => {
+mainMenu.parentElement.addEventListener('click', (event) => {
     let target = event.target;
 
     if (target.classList.contains('main-menu__link')){   
@@ -52,6 +52,18 @@ mainMenu.addEventListener('click', (event) => {
             let event = new Event('click');
             closeButton.dispatchEvent(event);
         }
+    }
+
+    if (target.classList.contains('menu-wrap')){
+        
+        mainMenu.classList.remove('main-menu--visible-mod');
+
+        closeButton.firstElementChild.classList.remove('animate-first');
+        closeButton.lastElementChild.classList.remove('animate-second');
+
+        setTimeout(() => {
+            mainMenu.parentElement.style.visibility = 'hidden';
+        }, 400);   
     }
 });
 

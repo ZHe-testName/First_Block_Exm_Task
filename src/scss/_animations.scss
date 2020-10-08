@@ -55,7 +55,7 @@
 
 @keyframes second-stick {
     50%{
-        transform: rotate(-360deg);
+        transform: rotate(360deg);
     }
     75%{
         transform: translateX(-10px);

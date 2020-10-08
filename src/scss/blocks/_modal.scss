@@ -48,12 +48,6 @@
         height: 70px;
     }
 
-    @media(min-width: 500px){
-        &-closing-block{
-            height: auto;
-        }
-    }
-
     &__btn-wrap{
         height: 50px;
         margin-top: 10px;
@@ -110,12 +104,5 @@
 @media (min-width: 1024px){
     .modal{
         height: 100vh;
-    }
-}
-
-@media (min-width: 500px){
-    .wide-mode{
-        position: absolute;
-        left: -30px;
     }
 }

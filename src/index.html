@@ -135,7 +135,7 @@
 
         <main class="main-container">
 
-            <header class="header">
+            <header id="header" class="header">
                 <div class="burger">
                     <button class="basic-button basic-button--burger-bg"></button>
                 </div>
@@ -427,8 +427,9 @@
         
                 <div class="price-block">
                     <div class="price-main">
-                        <nav class="price-cards">
-                            <div class="price-card">
+                        <ul class="price-cards">
+
+                            <li class="price-card">
                                 <div class="price-card-item">
                                     <p class="price-card-item__header">
                                         Ремонные услуги
@@ -471,10 +472,10 @@
                                     </a>
                                 </div>
                                 <!-- /.price-card-item -->
-                            </div>
+                            </li>
                             <!-- /.swiper-slide price-card -->
         
-                            <div class="price-card">
+                            <li class="price-card">
                                 <div class="price-card-item">
                                     <p class="price-card-item__header">
                                         Ремонные услуги
@@ -517,10 +518,10 @@
                                     </a>
                                 </div>
                                 <!-- /.price-card-item -->
-                            </div>
+                            </li>
                             <!-- /.swiper-slide price-card -->
         
-                            <div class="price-card">
+                            <li class="price-card">
                                 <div class="price-card-item">
                                     <p class="price-card-item__header">
                                         Ремонные услуги
@@ -563,10 +564,10 @@
                                     </a>
                                 </div>
                                 <!-- /.price-card-item -->
-                            </div>
+                            </li>
                             <!-- /.swiper-slide price-card -->
         
-                            <div class="price-card">
+                            <li class="price-card">
                                 <div class="price-card-item">
                                     <p class="price-card-item__header">
                                         Ремонные услуги
@@ -609,10 +610,10 @@
                                     </a>
                                 </div>
                                 <!-- /.price-card-item -->
-                            </div>
+                            </li>
                             <!-- /.swiper-slide price-card -->
         
-                            <div class="price-card">
+                            <li class="price-card">
                                 <div class="price-card-item">
                                     <p class="price-card-item__header">
                                         Ремонные услуги
@@ -655,12 +656,10 @@
                                     </a>
                                 </div>
                                 <!-- /.price-card-item -->
-                            </div>
+                            </li>
                             <!-- /.swiper-slide price-card -->
 
-                            <!-- /.price-card spacer -->
-
-                        </nav>
+                        </ul>
                         <!-- /.swiper-wrapper price-cards -->
         
                         <div class="swiper-pagination"></div>
@@ -683,8 +682,8 @@
                         <span class="price-wide-header__elem price-wide-header__elem--spacer"></span>
                     </div>
 
-                    <div class="price-wide-table">
-                        <div class="price-wide-table__row">
+                    <ul class="price-wide-table">
+                        <li class="price-wide-table__row">
                             <span class="price-wide-table__cell price-wide-table__cell--option">
                                 Диагностика
                             </span>
@@ -703,10 +702,10 @@
                                 </a>
                             </span>
                             <!-- /.price-wide-table__cell -->
-                        </div>
+                        </li>
                         <!-- /.price-wide-table__row -->
 
-                        <div class="price-wide-table__row">
+                        <li class="price-wide-table__row">
                             <span class="price-wide-table__cell price-wide-table__cell--option">
                                 Замена диспля
                             </span>
@@ -725,10 +724,10 @@
                                 </a>
                             </span>
                             <!-- /.price-wide-table__cell -->
-                        </div>
+                        </li>
                         <!-- /.price-wide-table__row -->
 
-                        <div class="price-wide-table__row">
+                        <li class="price-wide-table__row">
                             <span class="price-wide-table__cell price-wide-table__cell--option">
                                 Замена полифоничелкого динамика
                             </span>
@@ -747,10 +746,10 @@
                                 </a>
                             </span>
                             <!-- /.price-wide-table__cell -->
-                        </div>
+                        </li>
                         <!-- /.price-wide-table__row -->
 
-                        <div class="price-wide-table__row">
+                        <li class="price-wide-table__row">
                             <span class="price-wide-table__cell price-wide-table__cell--option">
                                 Тестирование с выдачей технического заключения
                             </span>
@@ -769,10 +768,10 @@
                                 </a>
                             </span>
                             <!-- /.price-wide-table__cell -->
-                        </div>
+                        </li>
                         <!-- /.price-wide-table__row -->
 
-                        <div class="price-wide-table__row">
+                        <li class="price-wide-table__row">
                             <span class="price-wide-table__cell price-wide-table__cell--option">
                                 Замена програмного обеспечения
                             </span>
@@ -791,10 +790,10 @@
                                 </a>
                             </span>
                             <!-- /.price-wide-table__cell -->
-                        </div>
+                        </li>
                         <!-- /.price-wide-table__row -->
 
-                    </div>
+                    </ul>
                     <!-- /.price-wide-table -->
                 </div>
             </div>
@@ -850,6 +849,7 @@
 
         <div class="modal-wrap">
             <div id="feedback" class="modal">
+               
                 <div class="modal-closing-block">
                     <div class="modal__btn-wrap">
                         <button id="feedback-close" class="basic-button basic-button--close-bg wide-mode">
@@ -909,10 +909,11 @@
         <!-- /.modal-wrap -->
 
         <div class="modal-wrap">
+
             <div id="callback" class="modal">
                 <div class="modal-closing-block">
                     <div class="modal__btn-wrap">
-                        <button id="callback-close" class="basic-button basic-button--close-bg">
+                        <button id="callback-close" class="basic-button basic-button--close-bg wide-mode">
                             <div class="basic-button--close-bg__first-stick cross"></div>
                             <div class="basic-button--close-bg__second-stick cross"></div>
                         </button>
