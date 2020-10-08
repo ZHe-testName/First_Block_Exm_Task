@@ -7,6 +7,9 @@ import '../scss/style.scss';
 //Include Swiper sliders
 import '../js/modules/_sliders';
 
+//Hendler function injection
+import '../js/_hendlers';
+
 //Header js file
 import '../js/modules/_header';
 

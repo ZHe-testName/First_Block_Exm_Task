@@ -27,13 +27,6 @@
     transition-duration: 0.7s;
     transition-timing-function: ease-out;
 
-    &--visible-mod{
-        transition: transform;
-        transform: translateX(0px);
-        transition-duration: 0.7s;
-        transition-timing-function: ease-in;
-    }
-
     &-content{
         max-width: 375px;
         margin-left: 5%;
@@ -105,4 +98,17 @@
     .modal{
         height: 100vh;
     }
+}
+
+@media (min-width: 1440px){
+    .modal-mode{
+        display: block;
+    }
+}
+
+.visible-mode{
+    transition: transform;
+    transform: translateX(0px);
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in;
 }

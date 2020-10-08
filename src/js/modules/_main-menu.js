@@ -1,3 +1,5 @@
+import {showHideHandler} from '../_hendlers';
+
 const mainMenu = document.querySelector('.main-menu'),
     closeButton = mainMenu.querySelector('.basic-button--close-bg'),
     feedbackBlock = document.getElementById('feedback'),
@@ -25,12 +27,7 @@ mainMenu.parentElement.addEventListener('click', (event) => {
     }
 
     if (target.classList.contains('basic-button--chat-bg')){
-        feedbackBlock.parentElement.style.visibility = 'visible';
-
-        feedbackBlock.classList.add('modal--visible-mod');
-
-        feedbackCloseButton.firstElementChild.classList.add('animate-first');
-        feedbackCloseButton.lastElementChild.classList.add('animate-second');
+        showHideHandler(feedbackBlock, feedbackCloseButton);
 
         //Immit the event on closing button
         //for shut menu window
@@ -41,12 +38,7 @@ mainMenu.parentElement.addEventListener('click', (event) => {
     }
 
     if (target.classList.contains('basic-button--call-bg')){
-        callbackBlock.parentElement.style.visibility = 'visible';
-
-        callbackBlock.classList.add('modal--visible-mod');
-
-        callbackCloseButton.firstElementChild.classList.add('animate-first');
-        callbackCloseButton.lastElementChild.classList.add('animate-second');
+        showHideHandler(callbackBlock, callbackCloseButton);
 
         if (document.documentElement.clientWidth < 1440){
             let event = new Event('click');
@@ -55,27 +47,11 @@ mainMenu.parentElement.addEventListener('click', (event) => {
     }
 
     if (target.classList.contains('menu-wrap')){
-        
-        mainMenu.classList.remove('main-menu--visible-mod');
-
-        closeButton.firstElementChild.classList.remove('animate-first');
-        closeButton.lastElementChild.classList.remove('animate-second');
-
-        setTimeout(() => {
-            mainMenu.parentElement.style.visibility = 'hidden';
-        }, 400);   
+        showHideHandler(mainMenu, closeButton, true);
     }
 });
 
-closeButton.addEventListener('click', () => {
-    
-    mainMenu.classList.remove('main-menu--visible-mod');
-
-    closeButton.firstElementChild.classList.remove('animate-first');
-    closeButton.lastElementChild.classList.remove('animate-second');
-
-    setTimeout(() => {
-        mainMenu.parentElement.style.visibility = 'hidden';
-    }, 400);      
+closeButton.addEventListener('click', () => {  
+    showHideHandler(mainMenu, closeButton, true);
 })
 
