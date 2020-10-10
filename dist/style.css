@@ -876,6 +876,10 @@ body {
   background-color: rgba(255, 255, 255, 0.74);
   z-index: 9999; }
 
+@media (min-width: 1124px) {
+  .modal-wrap {
+    overflow-y: hidden; } }
+
 .modal {
   position: absolute;
   top: 0px;
@@ -954,6 +958,10 @@ body {
 @media (min-width: 1024px) {
   .modal {
     height: 100vh; } }
+
+@media (min-width: 1124px) {
+  .modal {
+    overflow-y: hidden; } }
 
 @media (min-width: 1440px) {
   .modal-mode {
