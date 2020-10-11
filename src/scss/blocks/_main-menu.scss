@@ -24,10 +24,13 @@
 }
 
 .main-menu{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 0px;
     left: 0px;
     max-width: 320px;
+    height: 100%;
     background-color: #fff;
     overflow-y: scroll;
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
@@ -48,6 +51,10 @@
         padding: 0 10px;
         margin-bottom: 15px;
         margin-top: 10px;
+    }
+
+    &__list{
+        flex-grow: 2;
     }
 
     &__link{
@@ -101,6 +108,7 @@
 
 @media (min-width: 1440px){
     .main-menu{
+        display: block;
         position: static;
         transform: translateX(0px);
         box-shadow: none;
@@ -109,7 +117,7 @@
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 1124px){
     .main-menu{
         overflow-y: hidden;
     }
