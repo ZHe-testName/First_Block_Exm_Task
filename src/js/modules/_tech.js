@@ -2,13 +2,14 @@ const showBtn = document.querySelector('#techShowBtn'),
     techCards = document.querySelector('.tech-cards'),
     allLinks = techCards.querySelectorAll('a'),
 
-    elemWidth = 255,
-    elemHeight = 230;
+    elemWidth = allLinks[0].clientWidth + 30,// 255,
+    elemHeight = allLinks[0].clientHeight + 69;// 230;
 
 let flag = true;
 
 showBtn.addEventListener('click', () => {
     showBtn.classList.toggle('services__readmore-button--active');
+    console.log(elemHeight, elemWidth);
 
     if (flag) {
         let screenWidth = document.documentElement.clientWidth;

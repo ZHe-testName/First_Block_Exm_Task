@@ -11758,6 +11758,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "showHideHandler", function() { return showHideHandler; });
 function showHideHandler(block, closeButton) {
   var remove = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+  var body = document.querySelector('body');
 
   if (remove) {
     block.classList.remove('visible-mode');
@@ -11766,11 +11767,13 @@ function showHideHandler(block, closeButton) {
     setTimeout(function () {
       block.parentElement.style.visibility = 'hidden';
     }, 400);
+    body.removeAttribute('style');
     return;
   }
 
   block.parentElement.style.visibility = 'visible';
   block.classList.add('visible-mode');
+  body.style.overflowY = 'hidden';
   closeButton.firstElementChild.classList.add('animate-first');
   closeButton.lastElementChild.classList.add('animate-second');
 }
@@ -11800,10 +11803,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_modules_navigation__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_modules_navigation__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _js_modules_tech__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../js/modules/_tech */ "./src/js/modules/_tech.js");
 /* harmony import */ var _js_modules_tech__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_js_modules_tech__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _js_modules_footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../js/modules/_footer */ "./src/js/modules/_footer.js");
-/* harmony import */ var _js_modules_footer__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_js_modules_footer__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _js_modules_modal_feedback__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../js/modules/_modal-feedback */ "./src/js/modules/_modal-feedback.js");
-/* harmony import */ var _js_modules_modal_callback__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../js/modules/_modal-callback */ "./src/js/modules/_modal-callback.js");
+/* harmony import */ var _js_modules_modal_feedback__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../js/modules/_modal-feedback */ "./src/js/modules/_modal-feedback.js");
+/* harmony import */ var _js_modules_modal_callback__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../js/modules/_modal-callback */ "./src/js/modules/_modal-callback.js");
  //Include main scss file
 
  //Include Swiper sliders
@@ -11822,30 +11823,11 @@ __webpack_require__.r(__webpack_exports__);
 
  //Tech block js module
 
- //Footer style changer js module
-
  //Modal feedback js incertion
 
  //Modal callback js incertion
 
 
-console.log('Working');
-
-/***/ }),
-
-/***/ "./src/js/modules/_footer.js":
-/*!***********************************!*\
-  !*** ./src/js/modules/_footer.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var footerBlocks = document.querySelectorAll('.footer-block__link');
-
-if (document.documentElement.clientWidth > 768) {
-  footerBlocks[0].classList.add('left-txt-orient');
-  footerBlocks[footerBlocks.length - 1].classList.add('right-txt-orient');
-}
 
 /***/ }),
 
@@ -12033,10 +12015,12 @@ var cardsBlock = document.querySelector('.repair-cards'),
     showBtn = document.querySelector('#repairShowBtn'),
     allLinks = cardsBlock.querySelectorAll('a'); //variables for animation the card-block
 
-var elemWidth = 260,
-    elemHeight = 90,
-    parentHeight = 150; //flag for animation card-block
-//used for showing state
+var elemWidth = allLinks[0].clientWidth,
+    // 260,
+elemHeight = allLinks[0].clientHeight + 20,
+    // 90,
+parentHeight = cardsBlock.clientHeight; //flag for animation card-block
+//used to dicplay state
 
 var flag = true;
 showBtn.addEventListener('click', function () {
@@ -12163,7 +12147,7 @@ if (document.documentElement.clientWidth < 564) {
   });
 }
 
-if (document.documentElement.clientWidth <= 768) {
+if (document.documentElement.clientWidth < 768) {
   addSliderClasses('.price-cards');
   var swiperPrice = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.price-main', {
     loop: false,
@@ -12234,11 +12218,14 @@ if (document.documentElement.clientWidth <= 1120) {
 var showBtn = document.querySelector('#techShowBtn'),
     techCards = document.querySelector('.tech-cards'),
     allLinks = techCards.querySelectorAll('a'),
-    elemWidth = 255,
-    elemHeight = 230;
+    elemWidth = allLinks[0].clientWidth + 30,
+    // 255,
+elemHeight = allLinks[0].clientHeight + 69; // 230;
+
 var flag = true;
 showBtn.addEventListener('click', function () {
   showBtn.classList.toggle('services__readmore-button--active');
+  console.log(elemHeight, elemWidth);
 
   if (flag) {
     var screenWidth = document.documentElement.clientWidth;

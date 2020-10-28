@@ -66,7 +66,7 @@ if (document.documentElement.clientWidth < 564){
 
 }
 
-if (document.documentElement.clientWidth <= 768){
+if (document.documentElement.clientWidth < 768){
     addSliderClasses('.price-cards');
     
     const swiperPrice = new Swiper('.price-main', {

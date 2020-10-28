@@ -389,23 +389,29 @@ body {
   .basic-button--menu-mode {
     margin: 0 8px; }
   .basic-button--burger-bg {
-    background: url(./static/burger.svg) no-repeat center;
-    margin: 0 10px; }
+    background: url(./static/iconburg.png) no-repeat center;
+    margin: 0 10px;
+    background-color: #FF3E79; }
   .basic-button--call-bg {
-    background: url(./static/call.svg) no-repeat center;
-    margin: 0 10px; }
+    background: url(./static/iconphone.png) no-repeat center;
+    margin: 0 10px;
+    background-color: #FF3E79; }
   .basic-button--chat-bg {
-    background: url(./static/chat.svg) no-repeat center;
-    margin: 0 10px; }
+    background: url(./static/iconchat.png) no-repeat center;
+    margin: 0 10px;
+    background-color: #FF3E79; }
   .basic-button--profile-bg {
-    background: url(./static/profile.svg) no-repeat center;
-    margin: 0 10px; }
+    background: url("./static/Group 2.png") no-repeat center;
+    margin: 0 10px;
+    background-color: #FF3E79; }
   .basic-button--repair-bg {
-    background: url(./static/repair.svg) no-repeat center;
-    margin: 0 10px; }
+    background: url(./static/Group.svg) no-repeat center;
+    margin: 0 10px;
+    background-color: #FF3E79; }
   .basic-button--checkstatus-bg {
-    background: url(./static/checkstatus.svg) no-repeat center;
-    margin: 0 10px; }
+    background: url(./static/icon.svg) no-repeat center;
+    margin: 0 10px;
+    background-color: #FF3E79; }
   .basic-button:hover {
     transform: scale(1.1);
     box-shadow: 0 0 5px 2px #e698bf; }
@@ -436,7 +442,7 @@ body {
     margin: 10px 0; }
 
 @media (min-width: 768px) {
-  .burger {
+  .header__burger {
     border-right: 2px solid #EAEAEA;
     margin-right: 15px; } }
 
@@ -645,52 +651,48 @@ body {
   .repair-main {
     border: 1px solid transparent;
     overflow: hidden;
-    margin-top: 20px; }
-  .repair-cards {
-    margin: 24px 20px 40px 0px; }
+    margin-top: 20px;
+    padding: 0 10px;
+    padding-bottom: 20px; }
+  .repair-cards__button {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 70px !important;
+    margin-bottom: 15px;
+    background: url(./static/go.svg) 90% no-repeat;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 1px #EAEAEA;
+    border-radius: 6px;
+    transition: transform;
+    transition-duration: 0.4s; }
+  @media (min-width: 564px) {
     .repair-cards__button {
-      display: flex;
-      align-items: center;
-      justify-content: start;
-      height: 70px !important;
-      margin-bottom: 15px;
-      background: url(./static/go.svg) 90% no-repeat;
-      background-color: #fff;
-      box-shadow: inset 0 0 0 1px #EAEAEA;
-      border-radius: 6px;
-      transition: transform;
-      transition-duration: 0.4s; }
-    @media (min-width: 564px) {
-      .repair-cards__button {
-        width: 240px !important;
-        margin-right: 20px; }
-        .repair-cards__button:hover {
-          transform: scale(1.1);
-          box-shadow: 0 2px 5px 0 #b8b7b7;
-          transition: transform;
-          transition-duration: 0.4s; }
-        .repair-cards__button:hover > img {
-          margin-left: 12%;
-          transition: margin-left;
-          transition-duration: 0.5s; } }
-    .repair-cards__img {
-      display: block;
-      margin-left: 15px;
-      background-color: #fff;
-      transition: margin-left;
-      transition-duration: 0.5s; }
-      .repair-cards__img--cliped {
-        -webkit-clip-path: ellipse(120px 50px at 0px 0px);
-                clip-path: ellipse(120px 50px at 0px 0px); }
+      width: 240px !important; }
+      .repair-cards__button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 2px 5px 0 #b8b7b7;
+        transition: transform;
+        transition-duration: 0.4s; }
+      .repair-cards__button:hover > img {
+        margin-left: 12%;
+        transition: margin-left;
+        transition-duration: 0.5s; } }
+  .repair-cards__img {
+    display: block;
+    margin-left: 15px;
+    background-color: #fff;
+    transition: margin-left;
+    transition-duration: 0.5s; }
+    .repair-cards__img--cliped {
+      -webkit-clip-path: ellipse(120px 50px at 0px 0px);
+              clip-path: ellipse(120px 50px at 0px 0px); }
   @media (min-width: 564px) {
     .repair-cards {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       height: 150px;
-      margin-bottom: 15px;
-      margin-left: 20px;
-      margin-right: 0px;
       transition: height;
       transition-duration: 0.7s;
       transition-timing-function: ease-in; } }
@@ -882,15 +884,13 @@ body {
     display: flex;
     justify-content: space-between; }
     .footer-block {
-      flex-basis: 33%; } }
-
-.left-txt-orient {
-  display: block;
-  text-align: left; }
-
-.right-txt-orient {
-  display: block;
-  text-align: right; }
+      flex-basis: 33%; }
+  .left-txt-orient {
+    display: block;
+    text-align: left; }
+  .right-txt-orient {
+    display: block;
+    text-align: right; } }
 
 .modal-wrap {
   position: fixed;

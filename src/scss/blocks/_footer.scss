@@ -23,14 +23,15 @@
             flex-basis: 33%;
         }
     }
+
+    .left-txt-orient{
+        display: block;
+        text-align: left;
+    }
+    
+    .right-txt-orient{
+        display: block;
+        text-align: right;
+    }
 }
 
-.left-txt-orient{
-    display: block;
-    text-align: left;
-}
-
-.right-txt-orient{
-    display: block;
-    text-align: right;
-}

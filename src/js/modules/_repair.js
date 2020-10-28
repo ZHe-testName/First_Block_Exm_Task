@@ -3,12 +3,12 @@ const cardsBlock = document.querySelector('.repair-cards'),
     allLinks = cardsBlock.querySelectorAll('a');
 
 //variables for animation the card-block
-const elemWidth = 260,
-    elemHeight = 90,
-    parentHeight = 150;
+const elemWidth = allLinks[0].clientWidth, // 260,
+    elemHeight = allLinks[0].clientHeight + 20, // 90,
+    parentHeight = cardsBlock.clientHeight;
 
 //flag for animation card-block
-//used for showing state
+//used to dicplay state
 let flag = true;
 
 showBtn.addEventListener('click', () => {

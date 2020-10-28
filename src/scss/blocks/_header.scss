@@ -28,34 +28,40 @@
     }
     
     &--burger-bg{
-        background: url("../img/header-imgs/burger.svg") no-repeat center;
+        background: url("../img/refactor-images/iconburg.png") no-repeat center;
         margin: 0 10px;
+        background-color: $pincBtnCol;
     }
     
     &--call-bg{
-        background: url("../img/header-imgs/call.svg") no-repeat center;
+        background: url("../img/refactor-images/iconphone.png") no-repeat center;
         margin: 0 10px;
+        background-color: $pincBtnCol;
     }
     
     &--chat-bg{
-        background: url("../img/header-imgs/chat.svg") no-repeat center;
+        background: url("../img/refactor-images/iconchat.png") no-repeat center;
         margin: 0 10px;
+        background-color: $pincBtnCol;
     
     }
     
     &--profile-bg{
-        background: url("../img/header-imgs/profile.svg") no-repeat center;
+        background: url("../img/refactor-images/Group\ 2.png") no-repeat center;
         margin: 0 10px;
+        background-color: $pincBtnCol;
     }
     
     &--repair-bg{
-        background: url("../img/header-imgs/repair.svg") no-repeat center;
+        background: url("../img/refactor-images/Group.svg") no-repeat center;
         margin: 0 10px;
+        background-color: $pincBtnCol;
     }
     
     &--checkstatus-bg{
-        background: url("../img/header-imgs/checkstatus.svg") no-repeat center;
+        background: url("../img/refactor-images/icon.svg") no-repeat center;
         margin: 0 10px;
+        background-color: $pincBtnCol;
     }
     
     &:hover{
@@ -103,7 +109,7 @@
 }
 
 @media(min-width: 768px){
-    .burger{
+    .header__burger{
         border-right: 2px solid #EAEAEA;
         margin-right: 15px;
     }
