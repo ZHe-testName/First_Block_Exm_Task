@@ -6,10 +6,7 @@ const callback = document.getElementById('callback'),
 callback.parentElement.addEventListener('click', (event) => {
     const target = event.target;
 
-    if (target.classList.contains('modal-wrap') || target.classList.contains('basic-button--close-bg') ||
-    target.classList.contains('basic-button--close-bg__first-stick') || 
-    target.classList.contains('basic-button--close-bg__second-stick')){
-        
+    if (target.dataset.close === 'close'){
         showHideHandler(callback, closeButton, true);
     }
 });

@@ -11947,7 +11947,7 @@ var callback = document.getElementById('callback'),
 callback.parentElement.addEventListener('click', function (event) {
   var target = event.target;
 
-  if (target.classList.contains('modal-wrap') || target.classList.contains('basic-button--close-bg') || target.classList.contains('basic-button--close-bg__first-stick') || target.classList.contains('basic-button--close-bg__second-stick')) {
+  if (target.dataset.close === 'close') {
     Object(_hendlers__WEBPACK_IMPORTED_MODULE_0__["showHideHandler"])(callback, closeButton, true);
   }
 });
@@ -11970,7 +11970,7 @@ var feedbackModal = document.getElementById('feedback'),
 feedbackModal.parentElement.addEventListener('click', function (event) {
   var target = event.target;
 
-  if (target.classList.contains('modal-wrap') || target.classList.contains('basic-button--close-bg') || target.classList.contains('basic-button--close-bg__first-stick') || target.classList.contains('basic-button--close-bg__second-stick')) {
+  if (target.dataset.close === 'close') {
     Object(_hendlers__WEBPACK_IMPORTED_MODULE_0__["showHideHandler"])(feedbackModal, closeButton, true);
   }
 });
